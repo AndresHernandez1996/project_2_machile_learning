@@ -1,6 +1,6 @@
 **Project 1 – Video Game Success Analysis**
 
-[Notebook del Proyecto](.3269200a-875b-4222-a958-a0a1e76a80f0.ipynb)
+[Notebook del Proyecto](./3269200a-875b-4222-a958-a0a1e76a80f0.ipynb)
 
 This project involves creating a machine learning prototype for Zyfra, a company that develops efficiency solutions for the heavy industry. Using gold extraction and purification data, the objectives are:
 
