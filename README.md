@@ -1,12 +1,29 @@
-**Project 1 – Video Game Success Analysis**
+# Project 2: Gold Recovery Prediction
 
-[Notebook del Proyecto](./3269200a-875b-4222-a958-a0a1e76a80f0.ipynb)
+[Notebook project](./3269200a-875b-4222-a958-a0a1e76a80f0.ipynb)
 
-This project involves creating a machine learning prototype for Zyfra, a company that develops efficiency solutions for the heavy industry. Using gold extraction and purification data, the objectives are:
+## Objective  
+To predict gold recovery rates at the rougher and final stages using machine‑learning pipelines and the sMAPE metric.
 
-- Clean and preprocess the data (handle missing values, scale features, and encode variables).  
-- Explore correlations and patterns between process variables and extraction performance.  
-- Perform feature engineering to generate new predictive features.  
-- Train and compare regression models (linear regression, Random Forest, XGBoost) using scikit-learn in Python.  
-- Evaluate performance with metrics such as R², MAE, and RMSE, and tune hyperparameters via cross-validation (GridSearchCV).  
-- Deliver a functional prototype with recommendations to optimize production parameters and maximize profitable extraction.  
+Technologies Used  
+- Python (pandas, NumPy, scikit‑learn)  
+- Visualization (Matplotlib, Seaborn)  
+- Modeling (RandomForestRegressor, LightGBM)  
+- Environment (Jupyter Notebook, GitHub Actions)
+
+## Key Steps  
+1. **Data Loading & Verification**:
+   - Loaded train/test/full datasets and validated recovery formulas against ground truth. 
+2. **Data Cleaning**:
+   - Imputed missing values via time‑based interpolation and backfill.  
+3. **Exploratory Analysis**:
+   - Visualized Au, Ag, Pb concentration distributions across process stages.  
+4. **Feature Engineering**:
+   - Aggregated total metal concentrations and removed irrelevant columns. 
+5. **Modeling Pipeline**:
+   - Built and evaluated a RandomForestRegressor with scaling and sMAPE scoring.  
+6. **Hyperparameter Tuning**:
+   - Compared multiple configurations (n_estimators, max_depth) to select the best model.
+
+## Results  
+Achieved a final sMAPE of ~7.05%, demonstrating robust predictive accuracy for both flotation and purification stages.
